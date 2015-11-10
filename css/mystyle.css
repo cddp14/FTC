@@ -23,7 +23,7 @@ img {
 }
 
 p{
-  font-size: 1.15em;
+  font-size: 1.50em;
 }
 
 
@@ -68,7 +68,7 @@ h1 {
 h2 {
   font-family: 'PT Serif',serif;
   font-size: 1.50em;
-  /*margin-top: 50px;*/
+  margin-top: 33px;
   font-weight: bold;
 }
 
@@ -80,16 +80,26 @@ h3{
 
 }
 
-/*#mission {
-  font-family: 'Vollkorn', serif;
-  font-weight: bold;
-  /*font-size: 1px;*/
 
+
+
+address{
+
+  font-size: 18px;
+  margin-left: 18px;
 }
 
+/*h6{
+
+  font-size: 8px;
+}
 */
+.verse{
+  font-family: 'PT Serif', serif;
+  font-size: 1.25em;
+  font-style: italic;
 
-
+}
 
 
 /************************************
@@ -153,9 +163,9 @@ ul a {
 #slides{
 
   float: center;
-  width: 25%;
+  width: 30%;
   height: 25%;
-  margin-left: 40%;
+  margin-left: 30%;
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -176,36 +186,71 @@ Jumbotron
 .jumbotron {
   background-image: url('../img/bg2a.png');
   background-repeat: no-repeat;
+
   /*background-position:  200% 100%;*/
   /*padding: 200px 0 140px 0;*/
   /*margin-bottom: 70px;*/
-  max-height: 450px;
+/*  max-height: 1000px;*/*/
 }
 
-.device {
+.helpPhoto {
   width: 400px;
   height: 500px;
-  background: url('../img/volunter.jpg') no-repeat;
+  /*background: url('../img/volunter.jpg') no-repeat;*/
+  margin-top: 50px;
+  border-image: rounded;
 }
+
+.donatePhoto {
+  width: 400px;
+  height: 500px;
+  /*background: url('../img/piggy.jpg') no-repeat;*/
+  margin-top: 50px;
+}
+
+.aboutPhoto {
+  width: 408px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.pastor{
+  width: 60%;
+  margin-top: 50px;
+  
+}
+
+/*.bio{
+  background-image: url('../img/bg2a.png');
+  background-repeat: no-repeat;
+
+}
+*/
+
 
 /************************************
 FOOTER
 *************************************/
 /*footer {
-  font-size: 0.75em;
-  text-align: left;
+  border-width: medium;
+  border-color: #8b66b2;
+  text-align: center;
   clear: both;
   padding-top: 10px;
-  /*color: #ccc;*/
+  /*color: #ccc;
  /* background-position:bottom;
 }
 
-.jplogo {
-  width: 40px;
-  height: 40px;
-  margin: 0 5px;
-  
-}*/
+*/
+
+footer{
+  /*text-align: left;*/
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-top-color: #efce00;
+ /* color:#8b66b2;*/
+  /*background-color: #8b66b2;*/
+}
 
 
 
