@@ -57,7 +57,7 @@ h1 {
   font-family: 'Dancing Script', cursive, serif;
   font-weight: 700;
   margin-top: 50px;
-  font-size: 53px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 1em;
   text-align: center;
@@ -184,7 +184,7 @@ Jumbotron
 ================================ */
 
 .jumbotron {
-  background-image: url('../img/bg2a.png');
+  background-image: url('../img/bg2b.png');
   background-repeat: no-repeat;
 
   /*background-position:  200% 100%;*/
