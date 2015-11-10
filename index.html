@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Feed the City</title>
-   		<meta name="viewport" content="width=device-width, initial-scale=1.0">      
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">   		
 	  	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     	<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    	<link href="css/main.css" rel="stylesheet">	
-
-
+    	<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700|Vollkorn:700,400italic|Crimson+Text:700,400italic|PT+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    	<link href="css/mystyle.css" rel="stylesheet" media="screen">	
+    	
 
 	</head> 
 	<body>
 		<!-- NAV BAR -->
-		
-		<!-- END NAV BAR  -->
+	  <header class="navbar navbar-default ">
+		<div class="container-fluid">
+		  <div class="row">
+		  	<div class="col-md-3">
+		  		<img id="logo" src="img/FTC.png" alt="Feed the City Logo">
+		  	</div>
+
+		  	<div class="col-md-5">
+		  		<a href="index.html"><h1>Feed The City, Inc.</h1></a>
+			</div>
+
+			<div class="col-md-4" id="mission">
+			  	<h2>Our mission is to feed and clothe the needy of Louisville, KY and Southern Indiana</h2>
+			</div>
+		  </div>
+		</div>    	     
+  		  
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          	<span class="icon-bar"></span>
+           	<span class="icon-bar"></span>
+          	<span class="icon-bar"></span>          
+        </button>
+
+  	  	<nav class="collapse navbar-collapse">
+          <ul class="nav nav-pills">
+            <li><a href="index.html" class="selected">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="help.html" >VOLUNTEER</a></li>
+			<li><a href="donate.html">DONATIONS</a></li>
+    	    <li><a href="events.html">EVENTS</a></li>	
+    	  </ul>
+        </nav>
+  	  </header><!--  END NAV BAR -->
+  		  
+	<div class="container">
+   		 <h3 class="verse">"For I was an hungered, and ye gave me meat: I was thirsty, and ye gave me drink: I was a stranger, and ye took me in: Naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me."</h3>
+   		  <h3 class="verse"> Matthew 25:35-36</h3>  
+    </div>
 
 		  <!-- Carousel -->
     <div id="myCarousel" class="carousel slide jumbotron">
@@ -25,13 +62,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="item active">
-            <h1>Learn how the dinosaurs are created</h1>
-            <img id="slides" src="img/W_Other_Images/bug2.jpeg" alt="Bug in amber">       
+            <h2>Feeding the hungry</h2>
+            <img id="slides" src="img/practice.jpg" alt="Serving Food">       
           </div>
           <div class="item">
-            <h1>Ask our geneticist a questions</h1>
-            <img id="slides" src="img/W_Other_Images/scientist.jpeg" alt="Dr.Wu">
-            <p><a class="btn  btn-lg" href="contact.html">Submit a question</a>      
+            <h2>Clothing the naked</h2>
+            <img id="slides" src="img/clothing.jpeg" alt="Giving Clothes">
+            <!-- <p><a class="btn  btn-lg" href="contact.html">Submit a question</a>       -->
           </div>          
         </div>     
       </div>
@@ -41,13 +78,31 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="icon-next"></span>
       </a>      
-    </div> <!-- End Carousel -->
+    </div><!-- End Carousel -->
 
-        
-		
-		<script src="http://code.jquery.com/jquery.js"></script>
-    	<script src="js/bootstrap.min.js"></script>
-    	<script src="js/dino.js" type="text/javascript"></script>
+
+    <footer>
+    	<div class="container">
+
+    		<div class= row>
+    			<div class="col-sm-5">
+    				<h5 class="text-right">502-772-5384</h5>
+
+    			</div>
+
+    			<div class="col-sm-7">
+    				<h5>1100 South 26th Street, Louisville, KY 40210</h5>
+    				
+    			</div>
+    			<div class="row">
+     				<h6 class="text-center"><small >Background image courtesy of rakratchada torsap at FreeDigitalPhotos.net</small></h6>
+    			</div>
+    		</div>
+     	</div>  
+    </footer>
+	<script src="http://code.jquery.com/jquery.js"></script>
+   	<script src="js/bootstrap.min.js"></script>
+    	
 
 	</body>
 
