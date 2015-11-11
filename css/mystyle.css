@@ -46,11 +46,7 @@ HEADING
   
   width: 80%;
  
-  
-
 }
-
-
 
 h1 {
   
@@ -81,19 +77,13 @@ h3{
 }
 
 
-
-
 address{
 
   font-size: 18px;
   margin-left: 18px;
 }
 
-/*h6{
 
-  font-size: 8px;
-}
-*/
 .verse{
   font-family: 'PT Serif', serif;
   font-size: 1.25em;
@@ -123,9 +113,10 @@ NAVAGATION
 
 ul li {
   display: inline-block;
-  margin-left: 250px;
+  margin-left: 0px;
   text-align: center;
-  padding: 0 30px 0 30px;
+ /* padding: 0 75px 0 75px;*/
+/* margin-left: 30%;*/
 
   
 }
@@ -134,6 +125,7 @@ ul a {
   font-weight: 800;
    font-size: 1.25em;
    text-align: center;
+   margin-left: 25%;
 
 }
 
@@ -215,8 +207,8 @@ Jumbotron
 }
 
 .pastor{
-  width: 60%;
-  margin-top: 40px;
+  width: 50%;
+  
   
 }
 
@@ -231,30 +223,15 @@ Jumbotron
 /************************************
 FOOTER
 *************************************/
-/*footer {
-  border-width: medium;
-  border-color: #8b66b2;
-  text-align: center;
-  clear: both;
-  padding-top: 10px;
-  /*color: #ccc;
- /* background-position:bottom;
-}
-
-*/
 
 footer{
   /*text-align: left;*/
   border-top-style: solid;
   border-top-width: 4px;
-  border-top-color: #efce00;
+  
  /* color:#8b66b2;*/
   /*background-color: #8b66b2;*/
 }
-
-
-
-
 
 
 /************************************
@@ -275,11 +252,10 @@ body {
   /*color: #000;*/
 }
 
-/*footer {
-  background: #940000; 
-  border-color: #599a68;
-  background-position: bottom;
-}*/
+footer {
+  
+  border-top-color: #efce00;
+}
 
 .navbar-collapse {
   background: #7c50a7;
@@ -319,5 +295,22 @@ ul a.selected, ul a:hover {
 */
 
 
+/*********************************************************************/
 
+@media (max-width: 767px){
+
+	h1{
+
+		font-size: 50px;
+		text-align: center;
+		margin: 0px;
+		/*max-width: 350px;*/
+		
+	}
+
+	#logo{
+		width: 20%;
+
+	}
+}
 
