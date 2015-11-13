@@ -3,23 +3,52 @@
 GENERAL STYLING
 **********************************/
 
-/*Need this for fixed header*/
 body {
-  /*padding-top: 115px;*/
-
+  
   font-family: "Crimson", serif;
   font-weight: normal;
 
+
+
 }
 
-/*.container{
-  max-width: 1000px;
-}*/
+
+.eventsPage{
+  background-image: url('../img/bg2b.png');
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+
+
+
+}
 
 
 img {
  max-width: 100%; 
   
+}
+
+h3{
+  font-family: 'Crimson',serif;
+  
+  font-size: 2em;  
+  font-weight: bold;
+
+}
+
+
+address{
+
+  font-size: 18px;
+  margin-left: 18px;
+}
+
+
+.verse{
+  font-family: 'PT Serif', serif;
+  font-size: 1.25em;
+  font-style: italic;
+
 }
 
 p{
@@ -68,28 +97,7 @@ h2 {
   font-weight: bold;
 }
 
-h3{
-  font-family: 'Crimson',serif;
-  
-  font-size: 2em;  
-  font-weight: bold;
 
-}
-
-
-address{
-
-  font-size: 18px;
-  margin-left: 18px;
-}
-
-
-.verse{
-  font-family: 'PT Serif', serif;
-  font-size: 1.25em;
-  font-style: italic;
-
-}
 
 
 /************************************
@@ -130,13 +138,22 @@ ul a {
 }
 
 
+ol li {
+
+   font-size: 18px;
+}
+
 /* Carousel
 ================================ */
 
+.carousel{
+  background-image: url('../img/bg2b.png');
+}
 .carousel-indicators {
   bottom: 0;
 }
 .carousel-indicators .active {
+
   background-color: #222;
 }
 .carousel-indicators li {
@@ -185,6 +202,11 @@ Jumbotron
 /*  max-height: 1000px;*/*/
 }
 
+/*==============================
+Photos 
+================================ */
+
+
 .helpPhoto {
   width: 400px;
   height: 500px;
@@ -201,23 +223,29 @@ Jumbotron
 }
 
 .aboutPhoto {
-  width: 408px;
-  height: 500px;
+  width: 300px;
+  height: 450px;
   margin-top: 50px;
 }
 
 .pastor{
-  width: 50%;
+  margin-top: 20px;
+  width: 60%;
+
   
   
 }
 
-/*.bio{
-  background-image: url('../img/bg2a.png');
-  background-repeat: no-repeat;
-
+.event1Photo{
+  width: 30%;
+  margin-top: 30px;
 }
-*/
+
+.event2Photo{
+  width: 20%;
+  margin-top: 30px;
+}
+
 
 
 /************************************
@@ -225,7 +253,7 @@ FOOTER
 *************************************/
 
 footer{
-  /*text-align: left;*/
+    
   border-top-style: solid;
   border-top-width: 4px;
   
@@ -287,30 +315,69 @@ ul a.selected, ul a:hover {
 }
 
 
-/* selected nav link */
-/*nav {
-  
-  color: #efce00;
-}
-*/
 
-
-/*********************************************************************/
+/*************************************************************************************************/
 
 @media (max-width: 767px){
 
 	h1{
 
-		font-size: 50px;
+		font-size: 40px;
 		text-align: center;
 		margin: 0px;
 		/*max-width: 350px;*/
 		
 	}
 
+  h2{
+      font-size: 20px;
+      text-align: center;
+      margin-top: 10px;
+  }
+
+ul li{
+
+  display: inline-block;
+  padding: 0;
+}
+
+  ul a {
+
+    font-size: 0.80em;
+    padding:0;
+    margin: 0;
+  }
+
+  h3{
+
+     font-size:1.5em;
+  }
+
+
+  h4{
+
+      font-size: 12px;
+    }
+  
+
+  .jumbotron p, p, ol li{
+
+      font-size: 1.1em;
+    }
+
+
+    .pastor{
+  width: 30%;
+   margin-bottom: 20px;
+  
+  
+}
+
 	#logo{
 		width: 20%;
 
 	}
+
+
 }
 
