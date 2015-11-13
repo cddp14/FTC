@@ -25,7 +25,7 @@
 			</div>
 
 			<div class="col-sm-4" id="mission">
-			  	<h2>Our mission is to feed and clothe the needy of Louisville, KY and Southern Indiana</h2>
+			  	<h2>Our mission is to feed and clothe the needy families of Louisville, KY and Southern Indiana</h2>
 			</div>
 		  </div>
 		</div>    	     
