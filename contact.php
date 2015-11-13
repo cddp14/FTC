@@ -48,7 +48,13 @@
         </nav>
   	  </header><!--  END NAV BAR -->
   		  
+      <div class="container">
+        
+      <div class="contactPhoto">
+              <img class="img-rounded img-responsive" src="img/construction.jpg" >
+            </div>
 
+      </div>
    		
 
 
