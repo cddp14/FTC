@@ -51,6 +51,10 @@ address{
 
 }
 
+label{
+  font-size: 1.50em;
+}
+
 p{
   font-size: 1.50em;
 }
@@ -162,10 +166,13 @@ ol li {
 
 .btn {
 
-  background-color: black;
-  color: white;
+  
   float: center;
-  margin-left: 20px;
+  margin-left: 0px;
+  border-width: medium;
+  font-size: 20px;
+  font-style: bold;
+
 }
 
 
@@ -194,12 +201,12 @@ Jumbotron
 
 .jumbotron {
   background-image: url('../img/bg2b.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 
   /*background-position:  200% 100%;*/
   /*padding: 200px 0 140px 0;*/
   /*margin-bottom: 70px;*/
-/*  max-height: 1000px;*/*/
+/*  max-height: 1000px;*/
 }
 
 /*==============================
@@ -207,33 +214,30 @@ Photos
 ================================ */
 
 
-.helpPhoto {
-  width: 400px;
-  height: 500px;
-  /*background: url('../img/volunter.jpg') no-repeat;*/
+.helpPhoto, .donatePhoto, .aboutPhoto {
+ 
   margin-top: 50px;
-  border-image: rounded;
+  
 }
 
-.donatePhoto {
-  width: 400px;
-  height: 500px;
-  /*background: url('../img/piggy.jpg') no-repeat;*/
-  margin-top: 50px;
-}
+.aboutPhoto{
 
-.aboutPhoto {
-  width: 300px;
-  height: 450px;
-  margin-top: 50px;
+  width: 375px;
 }
 
 .pastor{
   margin-top: 20px;
-  width: 60%;
+  width: 40%;
+  height: 40%;
 
   
   
+}
+
+.contactPhoto{
+   
+   margin-top: 45px;
+
 }
 
 .event1Photo{
@@ -246,11 +250,7 @@ Photos
   margin-top: 30px;
 }
 
-.contactPhoto{
-   width: 80%;
-   margin-left: 35%;
 
-}
 
 
 /************************************
@@ -314,11 +314,18 @@ nav a, nav a:visited {
 
 
 /* selected nav link  is a yellow color*/
-ul a.selected, ul a:hover {
+ul a.selected, ul a:hover, .btn-default:hover  {
   
   color: #efce00;
 }
 
+
+.btn-default {
+
+  color: black;
+  border-color: #efce00;
+  
+}
 
 
 /*************************************************************************************************/
@@ -340,6 +347,11 @@ ul a.selected, ul a:hover {
       margin-top: 10px;
   }
 
+
+  h3{
+
+     font-size: 1.2em;
+  }
 ul li{
 
   display: inline-block;
@@ -353,10 +365,7 @@ ul li{
     margin: 0;
   }
 
-  h3{
-
-     font-size:1.5em;
-  }
+  
 
 
   h4{
@@ -365,9 +374,14 @@ ul li{
     }
   
 
-  .jumbotron p, p, ol li{
+  .jumbotron p, p, ol li, label {
 
       font-size: 1.1em;
+    }
+
+    address{
+
+       font-size: 14px;
     }
 
 
@@ -378,11 +392,165 @@ ul li{
   
 }
 
+.aboutPhoto {
+ 
+    width: 225px;
+    margin-right: 50px;
+    
+
+
+}
+
+
 	#logo{
 		width: 20%;
 
 	}
 
+  textarea{
+
+    width: 300px;
+  }
+
 
 }
 
+/********************************************************/
+@media (min-width: 768px) and (max-width: 1000px ){
+
+h1{
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 18px;
+}
+
+#logo{
+
+  margin-top: 30px;
+
+
+}
+
+h3{
+
+  font-size: 1.30em;
+}
+
+ul li{
+   padding: 0 5px 0 5px;
+}
+
+ul a {
+
+    font-size: 0.9em;
+
+    margin-left: 0%;
+  }
+
+  .jumbotron p, p,label {
+
+      font-size: 1.20em;
+    }
+
+    ol li{
+      font-size:1.1em; 
+    }
+
+    address{
+      font-size: 15px;
+    }
+
+ .contactPhoto, .donatePhoto, .helpPhoto{
+
+  width:275px;
+}
+
+
+.aboutPhoto{
+  width: 245px;
+}
+  
+
+  h4{
+
+      font-size:14px;
+
+    }
+
+  textarea{
+
+    width: 350px;
+  }
+}
+
+
+
+
+
+/*********************************************************/
+
+@media (min-width: 1001px) and (max-width: 1250px ){
+
+h1{
+  font-size: 55px;
+}
+
+h2 {
+  margin-top: 45px;
+  font-size: 20px;
+}
+
+h3{
+
+  font-size: 1.5em;
+}
+
+ul li{
+   padding: 0 20px 0 20px;
+}
+
+ul a {
+
+    font-size: 1em;
+
+    margin-left: 0%;
+  }
+
+  .jumbotron p, p,label {
+
+      font-size: 1.30em;
+    }
+
+    ol li{
+      font-size:1.25em; 
+    }
+
+    address{
+      font-size: 16px;
+    }
+
+    .aboutPhoto
+    {
+
+      width: 310px;
+    }
+    .pastor{
+      width: 45%;
+      margin-left: 25%;
+    }
+
+    .contactPhoto{
+
+      width: 300px;
+      }
+
+      h4{
+
+        font-size: 16px;
+      }
+
+}
