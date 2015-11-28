@@ -1,3 +1,58 @@
+<?php 
+if (isset($_REQUEST['submitted'])) {
+// Initialize error array.
+  $errors = array();
+  // Check for a proper name
+  if (!empty($_REQUEST['name'])) {
+  $name = $_REQUEST['name'];
+  $pattern = "/^[a-zA-Z ]*$/";// This is a regular expression that checks if the name is valid characters
+  if (preg_match($pattern,$name)){ $name = $_REQUEST['name'];}
+  else{ $errors[] = 'Your Name can only contain A-Z or a-z .';}
+  } else {$errors[] = 'You did not enter your name.';}
+  
+  
+  
+  //Check for a valid email address
+  if (!empty($_REQUEST['email'])) {
+  $email = $_REQUEST['email'];
+  /*$pattern = "/^[@a-zA-Z0-9\_]{2,20}/";*/
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)){ $email = $_REQUEST['email'];}
+  /*else{ $errors[] = 'Your Phone number can only be numbers.';}*/
+  } else {$errors[] = 'You did not enter your email address.';}
+
+
+  // Check for a message
+  if (empty($_REQUEST['comment'])) {
+  	$errors[] = 'You did not enter a question or comment.';
+  	}else {
+	  	$comment = $_REQUEST['comment'];
+	  }
+  
+  
+  }
+  //End of validation 
+
+
+
+
+if (isset($_REQUEST['submitted'])) {
+  if (empty($errors)) { 
+  $from = "www.feedthecityky.com"; //Site name
+  // Change this to your email address you want to form sent to
+  $to = "feedthecity@att.net"; 
+  $subject = "Message from Feed the City Website ";
+  
+  $message = "
+  Message from " . $name . "  
+  Email: " . $email . "   
+  Comment/Question: " . $comment ."";
+  mail($to,$subject,$message,$from);
+
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -47,14 +102,75 @@
     	  </ul>
         </nav>
   	  </header><!--  END NAV BAR -->
-  		  
-      <div class="container">
-        
-      <div class="contactPhoto">
-              <img class="img-rounded img-responsive" src="img/construction.jpg" >
-            </div>
+  		<div class="jumbotron">  
+          <div class="container">
+          	<div class="row">
+          		<div class="col-sm-6">
 
-      </div>
+		              <h3>Got a question or comment? Send us an Email.</h3>
+		              <br>
+		              <form action="" method="post">
+		                <label>Name: <br />
+		                <input name="name" type="text" /><br /></label>
+		                <br><br>
+		                
+		                <label>Email: <br />
+		                <input name="email" type="text" /><br /></label>
+		                <br><br>
+
+		                <label>Questions or Comments: <br />
+		                  <textarea name="comment" rows="5" cols="40"></textarea>
+		               
+		                <br><br>
+		                <br>
+		                  
+		                 </label>
+		                 <br>
+		                
+		                <input class="btn btn-default pull-left" name="" type="reset" value="Reset Form" /> <input class="btn btn-default" name="submitted" type="submit" value="Submit" />
+		              </form>
+		              <br>
+
+		    
+		        </div>
+		        <div class="col-sm-6 hidden-xs">
+			        <div class="pull-right img-rounded">
+	              			<img class=" contactPhoto img-rounded img-responsive" src="img/contact.jpg" >
+	              			<h6><small>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</small></h6>
+	     			 </div>
+  				</div>
+		    </div>    
+
+		    <div class="row">
+		    	<h3>Feel free to call us at (502)-772-5384 </h3>
+		    </div>      
+
+
+
+      </div>  
+      
+
+		 <?php
+
+		  //Print Errors
+		  if (isset($_REQUEST['submitted'])) {
+		  // Print any error messages. 
+		  if (!empty($errors)) { 
+		  echo '<hr /><h4>The following occurred:</h4><ul>'; 
+		  // Print each error. 
+		  foreach ($errors as $msg) { echo '<li>'. $msg . '</li>';}
+		  echo '</ul><h4>Your mail could not be sent due to input errors.</h4><hr />';}
+		   else{echo '<hr /><h4 align="center">Your mail was sent. Thank you!</h4><hr />';
+		 
+		  /*echo "Message from " . $name . " " . $lastname . " <br />Email: ".$email." <br />";*/
+		  /*echo $comment;*/
+		  
+
+		  }
+		  }
+		   //End of errors array
+		  ?>
+   </div>
    		
 
 
@@ -63,7 +179,7 @@
 
     		<div class= row>
     			<div class="col-sm-3">
-    				<h4 class="text-center">502-772-5384</h4>
+    				<h4 class="text-center">(502)-772-5384</h4>
 
     			</div>
 
