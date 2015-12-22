@@ -61,7 +61,7 @@ if (isset($_REQUEST['submitted'])) {
    		<meta name="viewport" content="width=device-width, initial-scale=1.0">   		
 	  	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     	<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    	<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700|Vollkorn:700,400italic|Crimson+Text:700,400italic|PT+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    	<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700|Crimson+Text:700,400italic|PT+Serif:700,400italic' rel='stylesheet' type='text/css'>
     	<link href="css/mystyle.css" rel="stylesheet" media="screen">	
     	
 
@@ -80,7 +80,7 @@ if (isset($_REQUEST['submitted'])) {
 			</div>
 
 			<div class="col-sm-4" id="mission">
-			  	<h2>Our mission is to feed and clothe the needy families of Louisville, KY and Southern Indiana</h2>
+			  	<h2>Our mission is to feed and clothe the needy families of Louisville, KY and Southern Indiana.</h2>
 			</div>
 		  </div>
 		</div>    	     
@@ -133,12 +133,12 @@ if (isset($_REQUEST['submitted'])) {
 
 		    
 		        </div>
-		        <div class="col-sm-6 hidden-xs">
-			        <div class="pull-right img-rounded">
-	              			<img class=" contactPhoto img-rounded img-responsive" src="img/contact.jpg" >
-	              			<h6><small>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</small></h6>
-	     			 </div>
-  				</div>
+		        <div class="col-sm-6 hidden-xs pull-right">
+			       
+          			<img class=" contactPhoto img-rounded img-responsive" src="img/contact.jpg" >
+          			<h6><small>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</small></h6>
+	     			
+  				  </div>
 		    </div>    
 
 		    <div class="row">
