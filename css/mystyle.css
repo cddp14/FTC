@@ -14,7 +14,7 @@ body {
 
 
 .eventsPage{
-  background-image: url('../img/bg2b.png');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   margin-bottom: 10px;
 
@@ -151,7 +151,7 @@ ol li {
 ================================ */
 
 .carousel{
-  background-image: url('../img/bg2b.png');
+  background-image: url('../img/bg.jpg');
   margin-bottom: 30px;
 }
 .carousel-indicators {
@@ -204,7 +204,7 @@ Jumbotron
 ================================ */
 
 .jumbotron {
-  background-image: url('../img/bg2b.png');
+  background-image: url('../img/bg.jpg');
   background-repeat: repeat;
 
   /*background-position:  200% 100%;*/
@@ -243,6 +243,11 @@ Photos
 
 }
 
+.eventsPage{
+
+  min-height: 100px;
+}
+
 .event1Photo{
   width: 30%;
   margin-top: 30px;
@@ -250,7 +255,8 @@ Photos
 
 .event2Photo{
   width: 20%;
-  margin-top: 30px;
+  margin-top: 20px;
+
 }
 
 
@@ -553,10 +559,10 @@ ul a {
       margin-left: 25%;
     }
 
-    /*.contactPhoto{
+    .contactPhoto{
 
       width: 300px;
-      }*/
+      }
 /*
       h4{
 
