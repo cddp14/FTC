@@ -107,7 +107,7 @@ if (isset($_REQUEST['submitted'])) {
           	<div class="row">
           		<div class="col-sm-6">
 
-		              <h3>Got a question or comment? Send us an Email.</h3>
+		              <h3>Got a question or comment? Send us an email.</h3>
 		              <br>
 		              <form action="" method="post">
 		                <label>Name: <br />
@@ -135,8 +135,8 @@ if (isset($_REQUEST['submitted'])) {
 		        </div>
 		        <div class="col-sm-6 hidden-xs pull-right">
 			       
-          			<img class=" contactPhoto img-rounded img-responsive" src="img/contact.jpg" >
-          			<h6><small>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</small></h6>
+          			<img class=" contactPhoto img-rounded img-responsive pull-right" src="img/contact.jpg" >
+          			<h6 class="pull-right"><small>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</small></h6>
 	     			
   				  </div>
 		    </div>    
