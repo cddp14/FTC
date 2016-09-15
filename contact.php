@@ -190,6 +190,7 @@ if (isset($_REQUEST['submitted'])) {
 
     			<div class="col-sm-3">
     				<h4 class="text-center">feedthecity@att.net</h4>
+            <a href="login.php"><h6 class="text-center"><small>admin</small></h6></a>
 
     			</div>
     		</div>
